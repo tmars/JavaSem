@@ -7,7 +7,7 @@ public class Main {
       int[] b = new int[]{2,4,6,8, 10,12,14};
       int[] c = new int[]{3,6,9,12,15,18,21};
 
-//        int[] a = new int[]{2,3,4};
+//      int[] a = new int[]{2,3,4};
 //	    int[] b = new int[]{2,4,6};
 //	    int[] c = new int[]{3,6,9};
 

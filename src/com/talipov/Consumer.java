@@ -11,23 +11,19 @@ public class Consumer {
 
     public void mes(int k3, int k2, int k1) {
         if (k3 > 0) {
-            s3.get();
-            value += k3;
-            s3.release();
-        }
-
-        if (k2 > 0) {
-            s2.get();
-            value += k2;
-            s2.release();
-        }
-
-        if (k1 > 0) {
-            s1.get();
-            value += k1;
-            s1.release();
+           add(s3, k3);
+        } else if (k2 > 0) {
+            add(s3, k3);
+        } else if (k1 > 0) {
+            add(s3, k3);
         }
 
         System.out.println("Result: " + value);
+    }
+
+    private void add(Sem s, int v) {
+        s.get();
+        value += v;
+        s.release();
     }
 }
